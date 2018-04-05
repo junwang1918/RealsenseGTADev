@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_watchlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ca.realsense.realsensegtadev.activity.SingleReportActivity"
+    tools:showIn="@layout/app_bar_report">
+
+
+    <ScrollView
+        android:id="@+id/report_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomButtons"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/report_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_report_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_average_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/average_price"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_average_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_average_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_median_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/median_price"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_median_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_median_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_sales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/sales"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_sales"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_sales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_new_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/new_listings"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_new_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_new_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_active_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/active_listings"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_active_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_active_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_average_dom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/average_dom"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_average_dom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_average_dom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*"></TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/general_spacing"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/general_spacing"
+                android:paddingTop="@dimen/general_spacing">
+
+                <TextView
+                    android:id="@+id/tv_report_splp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_spacing"
+                    android:text="@string/average_splp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_report_splp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart_height"
+                    android:layout_marginBottom="@dimen/general_spacing" />
+
+                <TableLayout
+                    android:id="@+id/tbl_report_splp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

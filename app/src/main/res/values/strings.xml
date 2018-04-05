@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Realsense GTA Dev</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="str_big_pic">Big Picture</string>
+    <string name="str_service_term">Service Terms</string>
+    <string name="str_news">News</string>
+    <string name="str_watchlist">Watchlist</string>
+
+    <string name="average_median_price">Average / Median Price</string>
+    <string name="average_price">Average Price</string>
+    <string name="median_price">Median Price</string>
+
+    <string name="sales">Sales</string>
+    <string name="new_listings">New Listings</string>
+    <string name="active_listings">Active Listings</string>
+    <string name="average_dom">Average Days on Market</string>
+    <string name="average_splp">Sold / List Price</string>
+
+    <string name="show_price_table">Show Price Table</string>
+    <string name="hide_price_table">Hide Price Table</string>
+
+    <string name="property_type_intro_report">Please select a property type for report</string>
+    <string name="property_type_intro_comp">Please select a property type to compare</string>
+    <string name="single_report">Single Report</string>
+    <string name="comparison">Comparison</string>
+    <string name="comp_list_intro">Comparison List</string>
+    <string name="remove">Remove</string>
+    <string name="report">Rep</string>
+    <string name="list_view">List View</string>
+    <string name="map_view">Map View</string>
+    <string name="v_line">|</string>
+    <string name="menu_share">Share</string>
+</resources>

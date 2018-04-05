@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_big_pic"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/str_big_pic" />
+        <item
+            android:id="@+id/nav_watchlist"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/str_watchlist" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/str_news"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_service_terms"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/str_service_term" />
+    </group>
+
+</menu>

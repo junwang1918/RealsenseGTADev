@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1008613911882",
+    "firebase_url": "https://realsense-gta-dev-01.firebaseio.com",
+    "project_id": "realsense-gta-dev-01",
+    "storage_bucket": "realsense-gta-dev-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008613911882:android:8b83880d7da6776e",
+        "android_client_info": {
+          "package_name": "ca.realsense.realsensegtadev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008613911882-f6rgav597ml2jieo2nolab25j45o435r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwtAeU3fONXNiCJ58-JyOHhE0-qcpSG-E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

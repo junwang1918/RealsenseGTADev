@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watchlist_row"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_row_height"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_view_report"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#33CC33"
+        android:textSize="@dimen/list_row_text_fontsize" />
+
+
+
+    <CheckBox
+        android:id="@+id/row_checkbox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
